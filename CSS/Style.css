@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(247, 237, 223);
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    position: relative;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+    border-bottom: 2px dotted black;
+
+}
+
+h1:hover::before{
+    top: 0;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 194, 97);
+    z-index: -1; 
+    transition: all 0.5s ease-in-out; 
+}
+
+h1::after{
+    content: ("");
+    border-bottom: 2px dotted black;
+    width: 100%;
+}
+
+h2{
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(to right, rgb(63, 166, 92) , rgb(179, 173, 75));
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form button{
+    margin-top: 30px;
+    margin-left: 40%;
+    padding: 10px 45px;
+    background-color: rgb(209, 81, 46);
+    color: white;
+    border: none;
+    margin-bottom: 50px;
+}
+form{
+    border-bottom: 2px dotted black;
+}
+form button:hover{
+    background-color: brown;
+}
+
+#alrtMsg{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+
+
+
+
+
